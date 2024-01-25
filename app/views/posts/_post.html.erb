@@ -8,5 +8,12 @@
 <p>
       <%= post.content %>
     </p>
+
+    <p>
+    <strong>image:</strong>
+    <%= post.image %>
+    <%= image_tag(post.image.url, alt: 'Image', class: 'img-fluid') if post.image? %>
+
+  </p>
       </div>
 </article>
